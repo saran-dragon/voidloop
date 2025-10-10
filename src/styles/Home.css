@@ -1,0 +1,85 @@
+.home-page {
+  padding: 60px 20px 40px;
+  background-color: #0d0a2c; /* updated background */
+  color: #f0f0f5;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  width: 100%;
+}
+
+.home-hero {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.home-hero .title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #0ff;
+  text-shadow: 0 0 15px #0ff;
+  margin-bottom: 10px;
+}
+
+.home-hero .subtitle {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+.home-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.home-content .section {
+  background-color: #31136c; /* updated card background */
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.home-content .section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.2);
+}
+
+.home-content .section h2 {
+  color: #0ff;
+  margin-bottom: 10px;
+}
+
+.home-content .section p,
+.home-content .section ul {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.home-content .section ul li {
+  margin-bottom: 5px;
+}
+
+/* Images */
+.home-content .section img {
+  width: 100%;
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .home-hero .title {
+    font-size: 2rem;
+  }
+
+  .home-content .section {
+    padding: 15px;
+  }
+
+  .home-content .section img {
+    max-height: 200px;
+  }
+}
