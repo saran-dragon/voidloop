@@ -3,18 +3,18 @@ import "../styles/Contact.css";
 
 const contacts = [
   {
-    name: "Alice Sharma",
-    email: "alice.sharma@gmail.com",
+    name: "CH.SARATH CHANDRIKA",
+    email: "sarathchandrika17@gmail.com",
     role: "Team Lead"
   },
   {
-    name: "Ravi Kumar",
-    email: "ravi.kumar@gmail.com",
+    name: "N.BINDA SUDHARSAN",
+    email: "bindasudarsannagasuru@gmail.com",
     role: "Frontend Developer"
   },
   {
-    name: "Meera Das",
-    email: "meera.das@gmail.com",
+    name: "K.SARAN",
+    email: "sarankp431@gmail.com",
     role: "Backend Developer"
   }
 ];
