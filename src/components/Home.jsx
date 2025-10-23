@@ -1,10 +1,12 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import "../styles/Home.css";
 
 export default function Home() {
   const heroRef = useRef();
   const contentRef = useRef();
+  const posterRef = useRef();
+  const [showPoster, setShowPoster] = useState(true);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -23,13 +25,60 @@ export default function Home() {
 
       // Images fade-in
       gsap.from(".home-content img", { opacity: 0, y: 20, duration: 1, stagger: 0.3, delay: 1 });
+
+      // Poster animation
+      if (showPoster) {
+        gsap.from(".intro-poster", { opacity: 0, duration: 1 });
+        // Fade out after 5 seconds
+        gsap.to(".intro-poster", {
+          opacity: 0,
+          duration: 1,
+          delay: 5,
+          ease: "power2.out",
+          onComplete: () => setShowPoster(false)
+        });
+      }
     }, heroRef);
 
-    return () => ctx.revert();
-  }, []);
+    // Auto-close poster after 5 seconds
+    let timer;
+    if (showPoster) {
+      timer = setTimeout(() => {
+        gsap.to(".intro-poster", {
+          opacity: 0,
+          duration: 1,
+          ease: "power2.out",
+          onComplete: () => setShowPoster(false)
+        });
+      }, 5000);
+    }
+
+    return () => {
+      clearTimeout(timer);
+      ctx.revert();
+    };
+  }, [showPoster]);
+
+  // Handle manual close with fade-out
+  const handleClose = () => {
+    gsap.to(".intro-poster", {
+      opacity: 0,
+      duration: 1,
+      ease: "power2.out",
+      onComplete: () => setShowPoster(false)
+    });
+  };
 
   return (
     <section className="home-page" ref={heroRef}>
+      {showPoster && (
+        <div className="intro-poster" ref={posterRef} style={{ position: 'fixed', top: 0, left: 0, width: '100vw', height: '100vh', backgroundImage: `url(documents/poster_2.jpg)`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundPosition: 'center', zIndex: 1000 }}>
+          <button className="close-button" onClick={handleClose} style={{ position: 'absolute', top: '10px', right: '10px', zIndex: 1001, padding: '10px 20px', background: '#fff', border: 'none', cursor: 'pointer', color: '#000' }}>
+            Close
+          </button>
+        </div>
+      )}
+
       {/* Hero Section */}
       <div className="home-hero">
         <h1 className="title">Amaravati Quantum Valley Hackathon</h1>
@@ -43,22 +92,20 @@ export default function Home() {
         <div className="section">
           <h2>Our Problem Statement</h2>
           <img
-            src="https://images.unsplash.com/photo-1605902711622-cfb43c443f71?auto=format&fit=crop&w=800&q=80"
+            src="images/home-1.png"
             alt="Problem Statement"
           />
           <p>
             We aim to revolutionize logistics and resource allocation through quantum-inspired optimization algorithms.
             Our goal is to overcome inefficiencies in traditional delivery systems by integrating hybrid quantum-classical models that minimize travel distances, reduce fuel consumption, and improve delivery timelines.
             This innovation focuses on large-scale operations such as postal networks, healthcare logistics, and supply chain systems, ultimately reducing operational costs and environmental impact while enhancing real-time efficiency.
-
-
           </p>
         </div>
 
         <div className="section">
           <h2>Challenge Context</h2>
           <img
-            src="https://images.unsplash.com/photo-1581091870621-69b4250eb0b2?auto=format&fit=crop&w=800&q=80"
+            src="images/home-2.png"
             alt="Challenge Context"
           />
           <p>

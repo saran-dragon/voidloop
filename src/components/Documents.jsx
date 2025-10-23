@@ -4,26 +4,20 @@ import "../styles/Documents.css";
 const documents = [
   {
     title: "Quantum Optimization Overview",
-    description: "A detailed PPT covering quantum-inspired optimization algorithms.",
-    image: "https://images.unsplash.com/photo-1581092795365-7f50c84b473d?auto=format&fit=crop&w=400&q=80",
-    ppt: "/documents/quantum_optimization.pptx",
-    pdf: "/documents/quantum_optimization.pdf",
-    doc: "/documents/quantum_optimization.docx"
+    description: "A detailed POSTER covering quantum-inspired optimization algorithms.",
+    image: "documents/poster_2.jpg",
+    pdf: "/documents/poster.pdf",
   },
   {
     title: "Logistics Optimization Report",
-    description: "PDF report demonstrating route and resource optimization with quantum methods.",
-    image: "https://images.unsplash.com/photo-1600185360884-430f3e8c7d3e?auto=format&fit=crop&w=400&q=80",
-    ppt: "/documents/logistics_report.pptx",
-    pdf: "/documents/logistics_report.pdf",
-    doc: "/documents/logistics_report.docx"
+    description: "PPT demonstrating route and resource optimization with quantum methods.",
+    image: "documents/pptimg.png",
+    ppt: "/documents/voidloop.pptx",
   },
   {
     title: "Hackathon Submission Document",
     description: "Complete documentation of our Amaravati Quantum Valley Hackathon project.",
     image: "https://images.unsplash.com/photo-1612832021086-1a0f2446223c?auto=format&fit=crop&w=400&q=80",
-    ppt: "/documents/hackathon_submission.pptx",
-    pdf: "/documents/hackathon_submission.pdf",
     doc: "/documents/hackathon_submission.docx"
   }
 ];

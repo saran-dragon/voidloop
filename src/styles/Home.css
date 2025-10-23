@@ -1,6 +1,6 @@
 .home-page {
   padding: 60px 20px 40px;
-  background-color: #0d0a2c; /* updated background */
+  background-color: #0d0a2c;
   color: #f0f0f5;
   min-height: 100vh;
   font-family: Arial, sans-serif;
@@ -31,7 +31,7 @@
 }
 
 .home-content .section {
-  background-color: #31136c; /* updated card background */
+  background-color: #31136c;
   padding: 20px;
   border-radius: 12px;
   margin-bottom: 20px;
@@ -69,6 +69,30 @@
   box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);
 }
 
+/* Poster Styles */
+.intro-poster {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+  transition: opacity 1s ease; /* Smooth transition for fade-out */
+}
+
+.close-button {
+  padding: 10px 20px;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #000;
+  transition: background-color 0.3s ease;
+}
+
+.close-button:hover {
+  background-color: #ddd;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .home-hero .title {
@@ -81,5 +105,14 @@
 
   .home-content .section img {
     max-height: 200px;
+  }
+
+  .intro-poster {
+    background-size: cover; /* Adjust for smaller screens */
+  }
+
+  .close-button {
+    padding: 8px 15px;
+    font-size: 0.9rem;
   }
 }
