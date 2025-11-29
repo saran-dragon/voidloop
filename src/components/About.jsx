@@ -16,7 +16,7 @@ const members = [
     department: "UI/UX",
     image: "images/11.jpg",
     resume: "#",
-    portfolio: "https://www.linkedin.com/in/ravikumar"
+    portfolio: "https://www.linkedin.com/in/binda-sudarsan-nagasuru-570ab2239?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
   },
   {
     name: "K.SARAN",
@@ -30,7 +30,7 @@ const members = [
     name: "Dr.J. SIVARAMA KRISHNA",
     role: "Mentor",
     department: "Quantum Computing",
-    image: "https://images.unsplash.com/photo-1595152772835-219674b2a8a0?auto=format&fit=crop&w=400&q=80"
+    image: "/images/HOD.jpg"
     // no resume or portfolio links for mentor
   }
 ];

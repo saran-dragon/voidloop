@@ -50,7 +50,7 @@ export default function Home() {
           ease: "power2.out",
           onComplete: () => setShowPoster(false)
         });
-      }, 5000);
+      }, 3000);
     }
 
     return () => {

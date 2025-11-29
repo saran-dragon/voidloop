@@ -17,7 +17,7 @@ const documents = [
   {
     title: "Hackathon Submission Document",
     description: "Complete documentation of our Amaravati Quantum Valley Hackathon project.",
-    image: "https://images.unsplash.com/photo-1612832021086-1a0f2446223c?auto=format&fit=crop&w=400&q=80",
+    image: "documents/poster_2.jpg",
     doc: "/documents/hackathon_submission.docx"
   }
 ];
