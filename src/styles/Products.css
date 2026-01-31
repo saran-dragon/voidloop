@@ -1,6 +1,6 @@
 .products-page {
   padding: 60px 20px;
-  background-color: #0d0a2c;
+  background-color: white;
   color: #f0f0f5;
   min-height: 100vh;
   font-family: Arial, sans-serif;
@@ -25,13 +25,13 @@
 
 .product-card {
   display: flex;
-  background-color: #0d0a2c;
+  background-color: #ed7d40;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-decoration: none;
-  color: inherit;
+  color: white;
 }
 
 .product-card:hover {
