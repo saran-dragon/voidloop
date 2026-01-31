@@ -1,7 +1,7 @@
 .home-page {
   padding: 60px 20px 40px;
-  background-color: #0d0a2c;
-  color: #f0f0f5;
+  background-color: white;
+  color: #ed7d40;
   min-height: 100vh;
   font-family: Arial, sans-serif;
   width: 100%;
@@ -31,7 +31,7 @@
 }
 
 .home-content .section {
-  background-color: #31136c;
+  background-color: #ed7d40;
   padding: 20px;
   border-radius: 12px;
   margin-bottom: 20px;
