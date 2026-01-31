@@ -1,7 +1,7 @@
 .contact-page {
   padding: 60px 20px;
-  background-color: #0d0a2c;
-  color: #f0f0f5;
+  background-color: white;
+  color: black;
   min-height: 100vh;
   font-family: Arial, sans-serif;
   width: 100%;
@@ -15,8 +15,8 @@
 
 .team-name h1 {
   font-size: 3rem;
-  color: #0ff;
-  text-shadow: 0 0 10px #0ff;
+  color: #ed7d40;
+  text-shadow: 0 0 10px black;
   transition: all 0.3s ease;
   cursor: default;
 }
@@ -35,7 +35,7 @@
 }
 
 .contact-card {
-  background-color: #0d0a2c;
+  background-color: #ed7d40;
   border-radius: 12px;
   width: 280px;
   padding: 20px;
@@ -52,17 +52,17 @@
 .contact-card h2 {
   font-size: 1.3rem;
   margin-bottom: 5px;
-  color: #0ff;
+  color: white;
 }
 
 .contact-card .role {
   font-size: 1rem;
-  color: #ccc;
+  color: black;
   margin-bottom: 10px;
 }
 
 .contact-card .email a {
-  color: #0ff;
+  color: white;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
