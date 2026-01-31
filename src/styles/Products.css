@@ -10,9 +10,9 @@
 .products-title {
   text-align: center;
   font-size: 2.5rem;
-  color: #0ff;
+  color: black;
   margin-bottom: 40px;
-  text-shadow: 0 0 15px #0ff;
+  text-shadow: 0 0 15px #ed7d40;
 }
 
 .products-container {
@@ -56,7 +56,7 @@
 
 .product-content h2 {
   font-size: 1.3rem;
-  color: #0ff;
+  color: white;
   margin-bottom: 5px;
 }
 
