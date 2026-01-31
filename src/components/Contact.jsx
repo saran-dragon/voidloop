@@ -16,6 +16,11 @@ const contacts = [
     name: "K.SARAN",
     email: "sarankp431@gmail.com",
     role: "Backend Developer"
+  },
+  {
+    name: "Dr.J. SIVARAMA KRISHNA",
+    email: "jsrkrishna3@gmail.com",
+    role: "MENTOR"
   }
 ];
 
