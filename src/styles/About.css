@@ -1,6 +1,6 @@
 .about-page {
   padding: 60px 20px;
-  background-color: #0d0a2c; /* updated background */
+  background-color: white; /* updated background */
   color: #f0f0f5;
   min-height: 100vh;
   font-family: Arial, sans-serif;
@@ -10,9 +10,9 @@
 .about-title {
   text-align: center;
   font-size: 2.5rem;
-  color: #0ff;
+  color: #ed7d40;
   margin-bottom: 40px;
-  text-shadow: 0 0 15px #0ff;
+  text-shadow: 0 0 15px black;
 }
 
 .cards-container {
@@ -23,7 +23,7 @@
 }
 
 .member-card {
-  background-color: #31136c; /* updated card background */
+  background-color: #ed7d40; /* updated card background */
   border-radius: 12px;
   overflow: hidden;
   width: 300px;
@@ -50,7 +50,7 @@
 .card-content h2 {
   font-size: 1.3rem;
   margin-bottom: 5px;
-  color: #0ff;
+  color: white;
 }
 
 .card-content .role {
