@@ -1,6 +1,6 @@
 .documents-page {
   padding: 60px 20px;
-  background-color: #0d0a2c; /* page background */
+  background-color: white; /* page background */
   color: #f0f0f5;
   min-height: 100vh;
   font-family: Arial, sans-serif;
@@ -10,7 +10,7 @@
 .documents-title {
   text-align: center;
   font-size: 2.5rem;
-  color: #0ff;
+  color: black;
   margin-bottom: 40px;
   text-shadow: 0 0 15px #0ff;
 }
@@ -23,7 +23,7 @@
 }
 
 .document-card {
-  background-color: #0d0a2c; /* card background matches page */
+  background-color: orange; /* card background matches page */
   border-radius: 12px;
   overflow: hidden;
   width: 300px;
@@ -50,7 +50,7 @@
 .doc-content h2 {
   font-size: 1.3rem;
   margin-bottom: 5px;
-  color: #0ff;
+  color: black;
 }
 
 .doc-content p {
@@ -66,7 +66,7 @@
 }
 
 .doc-links .btn {
-  background-color: #0ff;
+  background-color: white;
   color: #111;
   text-decoration: none;
   padding: 5px 10px;
