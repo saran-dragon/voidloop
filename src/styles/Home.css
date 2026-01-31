@@ -22,7 +22,7 @@
 
 .home-hero .subtitle {
   font-size: 1.2rem;
-  color: #ccc;
+  color: black;
 }
 
 .home-content {
@@ -53,6 +53,7 @@
 .home-content .section p,
 .home-content .section ul {
   font-size: 1rem;
+  color:black;
   line-height: 1.6;
 }
 
