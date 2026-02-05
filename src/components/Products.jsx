@@ -15,22 +15,10 @@ const products = [
     link: "https://classic-m7mj.onrender.com/"
   },
   {
-    title: "Energy Efficiency Monitor",
-    description: "Monitor and reduce energy consumption using optimized scheduling solutions.",
+    title: "futur simulator",
+    description: "furtre simulator",
     image: "/images/QA_imaage.png",
-    link: "https://example.com/energy-monitor"
-  },
-  {
-    title: "Quantum Data Analyzer",
-    description: "Analyze large datasets faster using quantum-inspired algorithms.",
-    image: "/images/CLA_image.png",
-    link: "https://example.com/data-analyzer"
-  },
-  {
-    title: "Drone Delivery Planner",
-    description: "Plan optimal drone delivery routes integrating quantum optimization.",
-    image: "/images/QA_imaage.png",
-    link: "https://example.com/drone-delivery"
+    link: "https://future-qfleet-1.onrender.com/"
   }
 ];
 
