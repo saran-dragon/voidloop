@@ -14,8 +14,8 @@ const links = [
   { to: "/", label: "Home" },
   { to: "/documents", label: "Document" },
   { to: "/products", label: "Products" },
-  { to: "/about", label: "About" },
-  { to: "/contact", label: "Contact" }
+  { to: "/about", label: "Contact" },
+  // { to: "/contact", label: "Contact" }
 ];
 
 export default function Navbar() {

@@ -1,120 +1,146 @@
-.home-page {
-  padding: 60px 20px 40px;
-  background-color: white;
-  color: #ed7d40;
-  min-height: 100vh;
-  font-family: Arial, sans-serif;
-  width: 100%;
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: auto;
 }
 
-.home-hero {
-  text-align: center;
-  margin-bottom: 40px;
+/* POSTER */
+.intro-poster{
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  z-index:9999;
 }
 
-.home-hero .title {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: #ed7d40;
-  text-shadow: 0 0 15px #0ff;
-  margin-bottom: 10px;
+.poster-content{
+  background:white;
+  padding:10px;
+  border-radius:14px;
 }
 
-.home-hero .subtitle {
-  font-size: 1.2rem;
-  color: black;
+.poster-content img{
+  max-width:90vw;
+  max-height:85vh;
 }
 
-.home-content {
-  max-width: 900px;
-  margin: 0 auto;
+.close-button{
+  position:absolute;
+  top:10px;
+  right:10px;
+  background:#ed7d40;
+  color:white;
+  border:none;
+  padding:8px 12px;
+  cursor:pointer;
 }
 
-.home-content .section {
-  background-color: #ed7d40;
-  padding: 20px;
-  border-radius: 12px;
-  margin-bottom: 20px;
-  box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  color:blsck;
-}
-
-.home-content .section:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 25px rgba(0, 255, 255, 0.2);
-}
-
-.home-content .section h2 {
-  color: white;
-  margin-bottom: 10px;
-}
-
-.home-content .section p,
-.home-content .section ul {
-  font-size: 1rem;
+/* PAGE */
+.home-page{
+  background:white;
   color:black;
-  line-height: 1.6;
+  font-family:Arial, sans-serif;
+  padding:40px 16px;
+  max-width:1100px;
+  margin:0 auto;
 }
 
-.home-content .section ul li {
-  margin-bottom: 5px;
+/* HERO WRAPPER (NEW) — ENSURES VISIBILITY */
+.title-wrapper{
+  background:white;
+  border:2px solid #ed7d40;
+  padding:28px;
 }
 
-/* Images */
-.home-content .section img {
-  width: 100%;
-  max-height: 250px;
-  object-fit: cover;
-  border-radius: 10px;
-  margin-bottom: 15px;
-  box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);
+/* TITLE NOW CLEAR + BOLD + CONTRAST */
+.home-hero .title{
+  color: #ed7d40;      /* ORANGE */
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 12px;
 }
 
-/* Poster Styles */
-.intro-poster {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
-  transition: opacity 1s ease; /* Smooth transition for fade-out */
+/* SUBTITLE */
+.home-hero .subtitle{
+  color:black;
+  font-size:1.1rem;
 }
 
-.close-button {
-  padding: 10px 20px;
-  background-color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: bold;
-  color: #000;
-  transition: background-color 0.3s ease;
+/* IMAGE CARD LAYOUT */
+.image-card{
+  position:relative;
+  width:100%;
+  max-width:900px;
+  margin: 0 auto 24px;
+  border-radius:16px;
+  overflow:hidden;
+  box-shadow:0 4px 12px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
 }
 
-.close-button:hover {
-  background-color: #ddd;
+.image-card img{
+  width:100%;
+  height:auto;
+  display:block;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .home-hero .title {
-    font-size: 2rem;
+.image-card:hover{
+  transform:scale(1.01);
+}
+
+/* TEXT OVERLAY */
+.image-card-overlay{
+  position:absolute;
+  bottom:0;
+  left:0;
+  right:0;
+  background:rgba(0,0,0,0.7);
+  color:white;
+  padding:20px;
+}
+
+.image-card-overlay ul{
+  list-style:none;
+  padding:0;
+}
+
+/* FOOTER */
+.site-footer{
+  background:black;
+  color:white;
+  padding:32px 16px;
+}
+
+.footer-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:16px;
+}
+
+/* RESPONSIVE */
+@media (max-width:900px){
+  .image-card{
+    max-width:100%;
   }
 
-  .home-content .section {
-    padding: 15px;
+  .footer-grid{
+    grid-template-columns:1fr 1fr;
+  }
+}
+
+@media (max-width:600px){
+  .home-page{
+    padding:24px 10px;
   }
 
-  .home-content .section img {
-    max-height: 200px;
+  .home-hero .title{
+    font-size:1.7rem;
   }
 
-  .intro-poster {
-    background-size: cover; /* Adjust for smaller screens */
-  }
-
-  .close-button {
-    padding: 8px 15px;
-    font-size: 0.9rem;
+  .footer-grid{
+    grid-template-columns:1fr;
+    text-align:center;
   }
 }
