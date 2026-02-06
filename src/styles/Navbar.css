@@ -48,28 +48,32 @@
   color: #00d4d4;
 }
 
-/* Mobile menu */
+/* ================= MOBILE TOGGLE (FIXED) ================= */
+
 .menu-toggle {
   display: none;
   flex-direction: column;
   justify-content: space-between;
-  width: 25px;
-  height: 18px;
+  width: 30px;
+  height: 22px;
   background: transparent;
   border: none;
   cursor: pointer;
+  padding: 4px;
 }
 
+/* CLEARLY VISIBLE HAMBURGER */
 .menu-toggle .bar {
   height: 3px;
   width: 100%;
-  background-color: #0ff;
-  border-radius: 2px;
+  background-color: white;  /* <-- KEY FIX */
+  border-radius: 3px;
   transition: all 0.3s ease;
 }
 
+/* Animation when open */
 .menu-toggle.open .bar:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
+  transform: rotate(45deg) translate(6px, 6px);
 }
 
 .menu-toggle.open .bar:nth-child(2) {
@@ -77,13 +81,14 @@
 }
 
 .menu-toggle.open .bar:nth-child(3) {
-  transform: rotate(-45deg) translate(5px, -5px);
+  transform: rotate(-45deg) translate(6px, -6px);
 }
 
 /* ===== RESPONSIVE MENU ===== */
 @media (max-width: 768px) {
+
   .menu-toggle {
-    display: flex;
+    display: flex;   /* <-- ensures visibility */
   }
 
   .nav-links {
