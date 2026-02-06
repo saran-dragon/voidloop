@@ -2,23 +2,18 @@ import React from "react";
 import "../styles/Products.css";
 
 const products = [
-  {
-    title: "Quantum Route Optimizer",
-    description: "Optimize delivery and logistics routes using quantum-inspired algorithms.",
-    image: "/images/qaoa-card.png",
-    link: "https://qfleet.onrender.com/"
-  },
-  {
-    title: "Smart Inventory Manager / Classic",
-    description: "Automated inventory management with predictive quantum analytics.",
-    image: "/images/CLA_image.png",
-    link: "https://classic-m7mj.onrender.com/"
-  },
+  
   {
     title: "futur simulator",
     description: "furtre simulator",
     image: "/images/simulation-card.png",
     link: " https://quantumfleetsim-web-171621255618.us-central1.run.app"
+  },
+  {
+    title: "Quantum Route Optimizer",
+    description: "Optimize delivery and logistics routes using quantum-inspired algorithms.",
+    image: "/images/qaoa-card.png",
+    link: "https://qfleetnew.onrender.com"
   }
 ];
 
