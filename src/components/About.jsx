@@ -7,21 +7,21 @@ const members = [
     role: "TEAM LEAD",
     email: "sarathchandrika17@gmail.com",
     image: "/images/chandrika.jpeg",
-    portfolio: "https://www.linkedin.com/in/alicesharma"
+    resume: "/resumes/chandrika-res.pdf"
   },
   {
     name: "N. BINDA SUDARSAN",
     role: "DATA SCIENTIST",
     email: "bindasudarsannagasuru@gmail.com",
     image: "/images/binda.jpeg",
-    portfolio: "https://www.linkedin.com/in/binda-sudarsan-nagasuru-570ab2239"
+    resume: "/resumes/binda-res.pdf"
   },
   {
     name: "K. SARAN",
     role: "WEB DEVELOPER",
     email: "sarankp431@gmail.com",
     image: "/images/saran.jpeg",
-    portfolio: "https://www.linkedin.com/in/meerdas"
+    resume: "/resumes/saran-res.pdf"
   },
   {
     name: "DR. J. SIVA RAMAKRISHNA",
@@ -49,14 +49,15 @@ export default function About() {
               <hr />
               <p className="contact">📧 {member.email}</p>
 
-              {member.portfolio && (
+              {member.resume && (
                 <a
                   className="portfolio-btn"
-                  href={member.portfolio}
+                  href={member.resume}
                   target="_blank"
                   rel="noreferrer"
+                  download
                 >
-                  View Profile
+                  View & Download Resume
                 </a>
               )}
             </div>
