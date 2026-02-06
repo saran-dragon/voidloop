@@ -1,6 +1,7 @@
 import React, { Suspense, lazy } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import "./App.css";
 
 // Lazy load pages for better performance
@@ -14,8 +15,10 @@ function App() {
   return (
     <Router>
       <div className="app-root">
-        {/* ✅ Navbar only here */}
+
+        {/* 🔹 CONSTANT NAVBAR */}
         <Navbar />
+
         <Suspense fallback={<div className="loading-fallback">Loading...</div>}>
           <Routes>
             <Route path="/" element={<Home />} />
@@ -25,6 +28,10 @@ function App() {
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </Suspense>
+
+        {/* 🔹 GLOBAL FOOTER */}
+        <Footer />
+
       </div>
     </Router>
   );

@@ -2,11 +2,15 @@
   background-color: #ed7d40;
   color: #fff;
   padding: 10px 20px;
-  position: sticky;
+
+  /* ===== FIXED NAVBAR ===== */
+  position: fixed;
   top: 0;
-  z-index: 100;
-  box-shadow: 0 2px 8px rgba(0, 255, 255, 0.1);
+  left: 0;
   width: 100%;
+
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 255, 255, 0.1);
 }
 
 .nav-inner {
@@ -76,7 +80,7 @@
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
-/* Responsive */
+/* ===== RESPONSIVE MENU ===== */
 @media (max-width: 768px) {
   .menu-toggle {
     display: flex;
@@ -84,7 +88,7 @@
 
   .nav-links {
     position: absolute;
-    top: 60px;
+    top: 60px;   /* below navbar */
     left: 0;
     right: 0;
     background-color: #0d0a2c;

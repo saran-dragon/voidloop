@@ -24,7 +24,7 @@ export default function Home() {
       {showPoster && (
         <div className="intro-poster">
           <div className="poster-content">
-            <img src="/documents/poster_2.jpg" alt="Poster" />
+            <img src="/documents/poster.jpeg" alt="Poster" />
             <button className="close-button" onClick={() => setShowPoster(false)}>
               ✕ Close
             </button>
@@ -98,7 +98,7 @@ export default function Home() {
         </div>
 
         {/* FOOTER */}
-        <footer className="site-footer">
+        {/* <footer className="site-footer">
           <div className="footer-grid">
             <div>
               <h3>Team Void Loop</h3>
@@ -119,7 +119,7 @@ export default function Home() {
               <p>© 2026 Qfleet VL. All rights reserved.</p>
             </div>
           </div>
-        </footer>
+        </footer> */}
 
       </section>
     </>

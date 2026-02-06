@@ -2,20 +2,11 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "../styles/Navbar.css";
 
-// const links = [
-//   { to: "/", label: "Home" },
-//   { to: "/about", label: "About" },
-//   { to: "/documents", label: "Documents" },
-//   { to: "/products", label: "Products" },
-//   { to: "/contact", label: "Contact" }
-// ];
-
 const links = [
   { to: "/", label: "Home" },
   { to: "/documents", label: "Document" },
   { to: "/products", label: "Products" },
   { to: "/about", label: "Contact" },
-  // { to: "/contact", label: "Contact" }
 ];
 
 export default function Navbar() {
@@ -48,7 +39,7 @@ export default function Navbar() {
               <li key={link.to}>
                 <NavLink
                   to={link.to}
-                  end={link.to === "/"} // exact match for home
+                  end={link.to === "/"}
                   className={({ isActive }) => (isActive ? "active" : "")}
                   onClick={closeMenu}
                 >

@@ -5,7 +5,7 @@ const products = [
   {
     title: "Quantum Route Optimizer",
     description: "Optimize delivery and logistics routes using quantum-inspired algorithms.",
-    image: "/images/QA_imaage.png",
+    image: "/images/qaoa-card.png",
     link: "https://qfleet.onrender.com/"
   },
   {
@@ -17,8 +17,8 @@ const products = [
   {
     title: "futur simulator",
     description: "furtre simulator",
-    image: "/images/QA_imaage.png",
-    link: "https://future-qfleet-1.onrender.com/"
+    image: "/images/simulation-card.png",
+    link: " https://quantumfleetsim-web-171621255618.us-central1.run.app"
   }
 ];
 
