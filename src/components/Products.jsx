@@ -7,7 +7,7 @@ const products = [
     title: "futur simulator",
     description: "furtre simulator",
     image: "/images/simulation-card.png",
-    link: " https://quantumfleetsim-web-171621255618.us-central1.run.app"
+    link: " https://future-qfleet-1.onrender.com"
   },
   {
     title: "Quantum Route Optimizer",
